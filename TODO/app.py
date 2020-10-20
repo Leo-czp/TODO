@@ -1,11 +1,11 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
-from config import SqlManager
+from config import CqlManager
 
 
 app = Flask(__name__)
 api = Api(app)
-db = SqlManager()
+db = CqlManager()
 
 parser = reqparse.RequestParser()
 parser.add_argument('message', type=str)

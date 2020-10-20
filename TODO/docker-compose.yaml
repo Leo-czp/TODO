@@ -1,0 +1,12 @@
+version: "2"
+services:
+  flask-web:
+    build: .
+    ports:
+       - "9876:9876"
+    container_name: app
+
+
+
+
+
